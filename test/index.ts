@@ -31,7 +31,6 @@ describe("Votings", function () {
 
   describe("addVoting", function () {
     it("Should return 2 candidates", async function () {
-
       await contract.addVoting(votingName, [candidate1.address, candidate2.address]);
 
       [name, candidates, startTime, finished, amount] = await contract.viewVoting(votingName);
