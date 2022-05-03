@@ -1,6 +1,6 @@
 import { task } from "hardhat/config";
 
-task("accounts")
+task("accounts-balances")
     .setAction(async (taskArgs, { ethers }) => {
         const accounts = await ethers.getSigners();
         let num = 0;
